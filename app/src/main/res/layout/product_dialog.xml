@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="@dimen/_8sdp"
+    android:background="@drawable/dialod_background">
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/dialogTypeIdField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:endIconMode="clear_text"
+        app:counterEnabled="true"
+        app:counterMaxLength="20"
+        app:errorEnabled="true"
+        android:layout_marginLeft="@dimen/_8sdp"
+        android:layout_marginRight="@dimen/_8sdp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:startIconDrawable="@drawable/ic_baseline_edit_24"
+        app:endIconDrawable="@drawable/ic_baseline_check_circle_24"
+        android:hint="Type Id...">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/dialogTypeId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:maxLength="20"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/dialogNameField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:endIconMode="clear_text"
+        app:counterEnabled="true"
+        app:counterMaxLength="20"
+        app:errorEnabled="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:startIconDrawable="@drawable/ic_baseline_edit_24"
+        app:endIconDrawable="@drawable/ic_baseline_check_circle_24"
+        android:hint="Name..."
+        android:layout_below="@id/dialogTypeIdField"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/dialogName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:maxLength="20"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/dialogAddressField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:endIconMode="clear_text"
+        app:counterEnabled="true"
+        app:counterMaxLength="40"
+        app:errorEnabled="true"
+        android:layout_marginLeft="@dimen/_8sdp"
+        android:layout_marginRight="@dimen/_8sdp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:startIconDrawable="@drawable/ic_baseline_location_on_24"
+        app:endIconDrawable="@drawable/ic_baseline_check_circle_24"
+        android:hint="Address..."
+        android:layout_below="@id/dialogNameField"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/dialogAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:maxLength="40"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/dialogCostField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:endIconMode="clear_text"
+        app:counterEnabled="true"
+        app:counterMaxLength="20"
+        app:errorEnabled="true"
+        android:layout_marginLeft="@dimen/_8sdp"
+        android:layout_marginRight="@dimen/_8sdp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:startIconDrawable="@drawable/ic_baseline_attach_money_24"
+        app:endIconDrawable="@drawable/ic_baseline_check_circle_24"
+        android:hint="Cost..."
+        android:layout_below="@id/dialogAddressField"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/dialogCost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:maxLength="20"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/dialogBtnOk"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="@dimen/_38sdp"
+        android:layout_alignParentEnd="true"
+        android:text="OK"
+        app:cornerRadius="@dimen/_10sdp"
+        android:layout_below="@id/dialogCostField"
+        android:layout_margin="@dimen/_4sdp"/>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/dialogBtnCancel"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="@dimen/_38sdp"
+        android:layout_below="@id/dialogCostField"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="@dimen/_4sdp"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:layout_marginEnd="@dimen/_4sdp"
+        android:layout_marginBottom="@dimen/_4sdp"
+        android:backgroundTint="#CC2432"
+        android:text="Cancel"
+        app:cornerRadius="@dimen/_10sdp" />
+</RelativeLayout>

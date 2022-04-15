@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="@dimen/_8sdp"
+    android:weightSum="1">
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.9">
+
+        <TextView
+            android:id="@+id/pTvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name:"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/pName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Coca Cola"
+            android:textStyle="normal"
+            android:layout_toEndOf="@id/pTvName"
+            android:textColor="@color/black"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:textSize="@dimen/_14sdp"/>
+        <TextView
+            android:id="@+id/pTvCost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cost:"
+            android:textStyle="bold"
+            android:layout_below="@id/pTvName"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14sdp"/>
+        <TextView
+            android:id="@+id/pCost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="111"
+            android:textStyle="normal"
+            android:layout_below="@id/pName"
+            android:layout_toEndOf="@id/pTvCost"
+            android:textColor="@color/black"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:textSize="@dimen/_14sdp"/>
+        <TextView
+            android:id="@+id/pTvAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Address:"
+            android:textStyle="bold"
+            android:layout_below="@id/pTvCost"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14sdp"/>
+
+        <TextView
+            android:id="@+id/pAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pCost"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_toEndOf="@id/pTvAddress"
+            android:text="Namangan"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="normal" />
+        <TextView
+            android:id="@+id/pTvDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date:"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_below="@id/pTvAddress"
+            android:textSize="@dimen/_14sdp"/>
+
+        <TextView
+            android:id="@+id/pDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pAddress"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_toEndOf="@id/pTvDate"
+            android:text="4/12/2022"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="normal" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="0.1">
+
+        <ImageView
+            android:id="@+id/pEdit"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:src="@drawable/edit"
+            android:layout_marginTop="@dimen/_5sdp"/>
+        <ImageView
+            android:id="@+id/pDelete"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/delete"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="@dimen/_8sdp"
+            />
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>
